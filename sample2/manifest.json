@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+    "name": "My Cool Extension",
+    "version": "0.1",
+    "content_scripts": [
+        {
+            "matches": ["*://*/*"],
+            "include_globs": ["*://*.youtube.com/*", "*://readthedocs.org/*"],
+            "js": ["content.js"]
+        }
+    ],
+    "permissions": ["tabs", "*://*/*"]
+}
